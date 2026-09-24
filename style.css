@@ -1,0 +1,138 @@
+/* Universal Style */
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Style */
+header{
+    margin: 20px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+header>h1{
+    font-size:x-large;
+    font-weight: bolder;
+    margin: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+header > small {
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+#FormContainer {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px  rgba(97, 103, 106, 0.3);
+    background-color: rgb(98, 98, 99);
+    color: rgb(255, 255, 255);
+}
+
+.list-item {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px  rgba(87, 95, 98, 0.3);
+    background-color: rgb(98, 98, 99);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#FormContainer > #studentForm :last-child > button {
+    display:flex;
+    justify-self: center;
+    background-color: rgb(226, 196, 95);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    flex-grow: 1;
+    width: 97.7%;
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(47, 44, 44);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#FormContainer > #studentForm :last-child > button:hover {
+    background-color: rgb(251, 195, 136);
+}
+
+
+article>button{
+    background-color: rgb(165, 65, 65);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    display:flex;
+    justify-content: center;
+    justify-self: center;
+    width: 90%;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+article>button:hover{
+    background-color: rgb(251, 136, 136);
+}
+
+#FormContainer > #studentForm > .input-fields {
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#FormContainer > #studentForm > .input-fields > input{
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid #111111;
+    padding: 5px;
+}
+
+header {
+    border-radius: 20px;
+    box-shadow: 2px 2px  rgba(87, 95, 98, 0.3);
+    background-color: rgb(73, 76, 91);
+    color: rgb(255, 255, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#studentList {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5px;
+}
+
+/* Mobile */
+@media (width <= 320px) {
+    #studentList > .list-item {
+        grid-column: span 12;
+    }
+}
+
+/* Tablet */
+@media (width > 320px) and (width <= 600px) {
+    #studentList > .list-item {
+        grid-column: span 4;
+    }
+}
+
+/* Desktop */
+@media (width >= 1000px) {
+    #studentList > .list-item {
+        grid-column: span 2;
+    }
+}
